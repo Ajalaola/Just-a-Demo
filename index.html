@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Just A Demo </title>
+</head>
+<body>
+
+<h1>Hello, this is an HTML page with JavaScript! Created By Ajala LAteef</h1>
+
+<p>Click the button to change the text color:</p>
+<p> For Further enquiry, Tplajalaola@gmail.com</p>
+
+<button onclick="changeColor()">Change Color</button>
+
+<script>
+    // JavaScript code
+    function changeColor() {
+        // Get the <h1> element
+        var heading = document.querySelector('h1');
+
+        // Generate a random color
+        var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+
+        // Change the text color
+        heading.style.color = randomColor;
+    }
+</script>
+
+</body>
+</html>
